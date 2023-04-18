@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/employee-prod
+    username: postgres
+    password: root
+  config:
+    activate:
+      on-profile: prod
+
+---
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/employee_db
+    username: postgres
+    password: root
+  config:
+    activate:
+      on-profile: db
